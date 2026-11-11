@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="700" viewBox="0 0 1100 700" font-family="Helvetica, Arial, sans-serif">
+<rect width="1100" height="700" fill="#ffffff"/>
+<text x="550" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#222">DeliveryBot: Arduino Uno wiring (PID_Integrated_Control)</text>
+<rect x="420" y="120" width="260" height="430" rx="10" fill="#00878F" stroke="#333" stroke-width="2"/>
+<text x="550.0" y="146" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff">Arduino Uno</text>
+<text x="550.0" y="166" text-anchor="middle" font-size="12" fill="#fff">ATmega328P · USB serial 115200</text>
+<rect x="140" y="170" width="170" height="270" rx="10" fill="#B22222" stroke="#333" stroke-width="2"/>
+<text x="225.0" y="196" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff">L298N #1</text>
+<text x="225.0" y="216" text-anchor="middle" font-size="12" fill="#fff">LEFT side</text>
+<rect x="790" y="170" width="170" height="270" rx="10" fill="#B22222" stroke="#333" stroke-width="2"/>
+<text x="875.0" y="196" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff">L298N #2</text>
+<text x="875.0" y="216" text-anchor="middle" font-size="12" fill="#fff">RIGHT side</text>
+<line x1="310" y1="200" x2="420" y2="200" stroke="#d62728" stroke-width="3"/>
+<circle cx="420" cy="200" r="4" fill="#222"/>
+<text x="428" y="204" text-anchor="start" font-size="13" fill="#fff">D5 ~</text>
+<circle cx="310" cy="200" r="4" fill="#222"/>
+<text x="302" y="204" text-anchor="end" font-size="13" fill="#fff">ENA</text>
+<line x1="310" y1="235" x2="420" y2="235" stroke="#1f77b4" stroke-width="3"/>
+<circle cx="420" cy="235" r="4" fill="#222"/>
+<text x="428" y="239" text-anchor="start" font-size="13" fill="#fff">D7</text>
+<circle cx="310" cy="235" r="4" fill="#222"/>
+<text x="302" y="239" text-anchor="end" font-size="13" fill="#fff">IN1</text>
+<line x1="310" y1="270" x2="420" y2="270" stroke="#1f77b4" stroke-width="3"/>
+<circle cx="420" cy="270" r="4" fill="#222"/>
+<text x="428" y="274" text-anchor="start" font-size="13" fill="#fff">D8</text>
+<circle cx="310" cy="270" r="4" fill="#222"/>
+<text x="302" y="274" text-anchor="end" font-size="13" fill="#fff">IN2</text>
+<line x1="310" y1="330" x2="420" y2="330" stroke="#d62728" stroke-width="3"/>
+<circle cx="420" cy="330" r="4" fill="#222"/>
+<text x="428" y="334" text-anchor="start" font-size="13" fill="#fff">D3 ~</text>
+<circle cx="310" cy="330" r="4" fill="#222"/>
+<text x="302" y="334" text-anchor="end" font-size="13" fill="#fff">ENB</text>
+<line x1="310" y1="365" x2="420" y2="365" stroke="#2ca02c" stroke-width="3"/>
+<circle cx="420" cy="365" r="4" fill="#222"/>
+<text x="428" y="369" text-anchor="start" font-size="13" fill="#fff">D2</text>
+<circle cx="310" cy="365" r="4" fill="#222"/>
+<text x="302" y="369" text-anchor="end" font-size="13" fill="#fff">IN3</text>
+<line x1="310" y1="400" x2="420" y2="400" stroke="#2ca02c" stroke-width="3"/>
+<circle cx="420" cy="400" r="4" fill="#222"/>
+<text x="428" y="404" text-anchor="start" font-size="13" fill="#fff">D4</text>
+<circle cx="310" cy="400" r="4" fill="#222"/>
+<text x="302" y="404" text-anchor="end" font-size="13" fill="#fff">IN4</text>
+<line x1="680" y1="200" x2="790" y2="200" stroke="#d62728" stroke-width="3"/>
+<circle cx="680" cy="200" r="4" fill="#222"/>
+<text x="672" y="204" text-anchor="end" font-size="13" fill="#fff">D6 ~</text>
+<circle cx="790" cy="200" r="4" fill="#222"/>
+<text x="798" y="204" text-anchor="start" font-size="13" fill="#fff">ENA</text>
+<line x1="680" y1="235" x2="790" y2="235" stroke="#1f77b4" stroke-width="3"/>
+<circle cx="680" cy="235" r="4" fill="#222"/>
+<text x="672" y="239" text-anchor="end" font-size="13" fill="#fff">D9</text>
+<circle cx="790" cy="235" r="4" fill="#222"/>
+<text x="798" y="239" text-anchor="start" font-size="13" fill="#fff">IN1</text>
+<line x1="680" y1="270" x2="790" y2="270" stroke="#1f77b4" stroke-width="3"/>
+<circle cx="680" cy="270" r="4" fill="#222"/>
+<text x="672" y="274" text-anchor="end" font-size="13" fill="#fff">D10</text>
+<circle cx="790" cy="270" r="4" fill="#222"/>
+<text x="798" y="274" text-anchor="start" font-size="13" fill="#fff">IN2</text>
+<line x1="680" y1="330" x2="790" y2="330" stroke="#d62728" stroke-width="3"/>
+<circle cx="680" cy="330" r="4" fill="#222"/>
+<text x="672" y="334" text-anchor="end" font-size="13" fill="#fff">D11 ~</text>
+<circle cx="790" cy="330" r="4" fill="#222"/>
+<text x="798" y="334" text-anchor="start" font-size="13" fill="#fff">ENB</text>
+<line x1="680" y1="365" x2="790" y2="365" stroke="#2ca02c" stroke-width="3"/>
+<circle cx="680" cy="365" r="4" fill="#222"/>
+<text x="672" y="369" text-anchor="end" font-size="13" fill="#fff">D12</text>
+<circle cx="790" cy="365" r="4" fill="#222"/>
+<text x="798" y="369" text-anchor="start" font-size="13" fill="#fff">IN3</text>
+<line x1="680" y1="400" x2="790" y2="400" stroke="#2ca02c" stroke-width="3"/>
+<circle cx="680" cy="400" r="4" fill="#222"/>
+<text x="672" y="404" text-anchor="end" font-size="13" fill="#fff">D13</text>
+<circle cx="790" cy="400" r="4" fill="#222"/>
+<text x="798" y="404" text-anchor="start" font-size="13" fill="#fff">IN4</text>
+<circle cx="60" cy="235" r="34" fill="#555" stroke="#222" stroke-width="2"/>
+<text x="60" y="233" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">M</text>
+<text x="60" y="251" text-anchor="middle" font-size="11" fill="#fff">LEFT_A</text>
+<circle cx="60" cy="385" r="34" fill="#555" stroke="#222" stroke-width="2"/>
+<text x="60" y="383" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">M</text>
+<text x="60" y="401" text-anchor="middle" font-size="11" fill="#fff">LEFT_B</text>
+<line x1="94" y1="235" x2="140" y2="235" stroke="#444" stroke-width="3"/>
+<line x1="94" y1="385" x2="140" y2="385" stroke="#444" stroke-width="3"/>
+<text x="146" y="228" font-size="11" fill="#fff">OUT1/2</text>
+<text x="146" y="378" font-size="11" fill="#fff">OUT3/4</text>
+<circle cx="1040" cy="235" r="34" fill="#555" stroke="#222" stroke-width="2"/>
+<text x="1040" y="233" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">M</text>
+<text x="1040" y="251" text-anchor="middle" font-size="11" fill="#fff">RIGHT_A</text>
+<circle cx="1040" cy="385" r="34" fill="#555" stroke="#222" stroke-width="2"/>
+<text x="1040" y="383" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">M</text>
+<text x="1040" y="401" text-anchor="middle" font-size="11" fill="#fff">RIGHT_B</text>
+<line x1="960" y1="235" x2="1006" y2="235" stroke="#444" stroke-width="3"/>
+<line x1="960" y1="385" x2="1006" y2="385" stroke="#444" stroke-width="3"/>
+<text x="954" y="228" text-anchor="end" font-size="11" fill="#fff">OUT1/2</text>
+<text x="954" y="378" text-anchor="end" font-size="11" fill="#fff">OUT3/4</text>
+<rect x="440" y="600" width="220" height="80" rx="10" fill="#3949AB" stroke="#333" stroke-width="2"/>
+<text x="550.0" y="626" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff">MPU6050 (GY-521)</text>
+<text x="550.0" y="646" text-anchor="middle" font-size="12" fill="#fff">I²C addr 0x68 · AD0 → GND</text>
+<line x1="470" y1="550" x2="470" y2="600" stroke="#8e24aa" stroke-width="3"/>
+<circle cx="470" cy="550" r="4" fill="#222"/>
+<text x="470" y="540" text-anchor="middle" font-size="12" fill="#fff">A4</text>
+<text x="476" y="579.0" font-size="11" fill="#333">SDA</text>
+<line x1="520" y1="550" x2="520" y2="600" stroke="#f57c00" stroke-width="3"/>
+<circle cx="520" cy="550" r="4" fill="#222"/>
+<text x="520" y="540" text-anchor="middle" font-size="12" fill="#fff">A5</text>
+<text x="526" y="579.0" font-size="11" fill="#333">SCL</text>
+<line x1="580" y1="550" x2="580" y2="600" stroke="#c62828" stroke-width="3"/>
+<circle cx="580" cy="550" r="4" fill="#222"/>
+<text x="580" y="540" text-anchor="middle" font-size="12" fill="#fff">5V</text>
+<text x="586" y="579.0" font-size="11" fill="#333">VCC</text>
+<line x1="630" y1="550" x2="630" y2="600" stroke="#000" stroke-width="3"/>
+<circle cx="630" cy="550" r="4" fill="#222"/>
+<text x="630" y="540" text-anchor="middle" font-size="12" fill="#fff">GND</text>
+<text x="636" y="579.0" font-size="11" fill="#333">GND</text>
+<rect x="470" y="58" width="160" height="34" rx="8" fill="#C51A4A" stroke="#333" stroke-width="2"/>
+<text x="550" y="80" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">Raspberry Pi</text>
+<line x1="550" y1="92" x2="550" y2="120" stroke="#555" stroke-width="3"/>
+<text x="558" y="112" font-size="11" fill="#333">USB · /dev/ttyUSB0</text>
+<text x="140" y="470" font-size="13" font-weight="bold" fill="#222">Legend</text>
+<line x1="140" y1="486" x2="170" y2="486" stroke="#d62728" stroke-width="3"/>
+<text x="178" y="490" font-size="12" fill="#222">PWM enable (ENA/ENB, ~ = PWM pin)</text>
+<line x1="140" y1="506" x2="170" y2="506" stroke="#1f77b4" stroke-width="3"/>
+<text x="178" y="510" font-size="12" fill="#222">Direction, channel A (IN1/IN2)</text>
+<line x1="140" y1="526" x2="170" y2="526" stroke="#2ca02c" stroke-width="3"/>
+<text x="178" y="530" font-size="12" fill="#222">Direction, channel B (IN3/IN4)</text>
+<text x="790" y="470" font-size="12" fill="#222">Remove the ENA/ENB jumpers on both L298N.</text>
+<text x="790" y="490" font-size="12" fill="#222">Motor supply → L298N 12V; join all GNDs</text>
+<text x="790" y="510" font-size="12" fill="#222">(battery, both L298N, Arduino, MPU6050).</text>
+</svg>

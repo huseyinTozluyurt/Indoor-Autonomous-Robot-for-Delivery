@@ -69,10 +69,13 @@ This repository holds the firmware for both microcontrollers and the Python scri
 | L298N dual H-bridge | 2 | One per side of the robot, each driving two motors |
 | DC gear motors | 4 | Skid-steer drive (two per side) |
 | MPU6050 (GY-521) | 1 | 3-axis gyro + accelerometer, used for yaw/heading |
-| STM32 board (STM32F1 series, CubeMX/HAL project) | 1 | Ultrasonic sensor controller |
+| STM32F103C8T6 board ("Blue Pill", LQFP48) | 1 | Ultrasonic sensor controller |
 | HC-SR04 ultrasonic sensor | 4 | Front, left, right and back distance |
 
 ### Arduino Uno pinout (current firmware: `PID_Integrated_Control`)
+
+![Arduino Uno wiring diagram](docs/images/arduino_wiring.svg)
+
 
 | Signal | Arduino pin | | Signal | Arduino pin |
 |---|---|---|---|---|
@@ -86,6 +89,11 @@ This repository holds the firmware for both microcontrollers and the Python scri
 
 ### STM32 pinout (`Robot Distance Perception`)
 
+Pin configuration of the STM32F103C8T6 in STM32CubeIDE:
+
+![STM32CubeIDE pinout of the STM32F103C8T6](docs/images/stm32_cubeide_pinout.png)
+
+
 | Sensor | TRIG | ECHO |
 |---|---|---|
 | Front | PB0 | PA0 |
@@ -93,6 +101,7 @@ This repository holds the firmware for both microcontrollers and the Python scri
 | Right | PB10 | PA2 |
 | Back | PB11 | PA3 |
 | UART to Raspberry Pi | USART1 TX/RX (PA9/PA10) | 115200 8N1 |
+| Debug / programming | SWDIO PA13, SWCLK PA14 | ST-Link |
 
 ECHO pins are configured as inputs with pull-down. TIM2 is used as a 1 MHz microsecond timer (prescaler 7 with the 8 MHz HSI clock; use 71 at 72 MHz).
 
@@ -241,7 +250,7 @@ arduino-cli upload  --fqbn arduino:avr:uno -p /dev/ttyACM0 .
 
 ### 2. Build and flash the STM32
 
-1. In **STM32CubeIDE**, create a project for your board (STM32F1 series) and configure it in CubeMX to match `main.c`:
+1. In **STM32CubeIDE**, create a project for the **STM32F103C8Tx** and configure it in CubeMX to match `main.c`:
    - SYSCLK from HSI (8 MHz)
    - **TIM2**: internal clock, prescaler `7`, period `65535` (1 MHz tick)
    - **USART1**: asynchronous, 115200, 8N1
